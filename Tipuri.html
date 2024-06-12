@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tipuri de arbori</title>
+</head>
+<body>
+    <navbar style="display:flex;justify-content:left;background-color: darkgreen; padding: 20x; position:fixed;top:0; margin-left:-10px; width:100%;z-index:100;  ">
+        <div style="display:flex;color:white;font-size: 24px;margin-left: 10px; padding:20px;cursor:pointer;"><a  class="sus"  href="index.html">Acasa</a></div>
+        <div style="display:flex;color:white;font-size: 24px;margin-left: 10px;padding:20px"><a class="sus"   href="Tipuri.html">Tipuri de arbori</a></div>
+    </navbar>
+    <br><br><br><br>
+    <h1 style="text-align: center;" style="height: 30%; margin-top:40px">Tipuri de arbori</h1>
+    <div style="text-align: center;"> 
+       
+          <h3 style="height: 40%; margin-top:30px">Arbore liber<br><br>
+            Un arbore este un graf conex și aciclic. Se mai numește și arbore liber.<br><br>
+            
+            Următoarele propoziții sunt adevărate:<br><br>
+            
+            Un arbore cu n vârfuri are n-1 muchii.<br>
+            Un arbore este un graf conex și minimal cu această proprietate; dacă s-ar mai elimina o muchie, graful nu ar mai fi conex.<br>
+            Un arbore este un graf aciclic și maximal cu această proprietate; dacă s-ar mai adăuga o muchie, s-ar obține un ciclu.<br>
+            Între oricare două vârfuri ale unui arbore există un lanț elementar unic.</h3>  
+
+            <img src="111.png" alt="Italian Trulli" style="height: 200px; width: auto;"> 
+            <h3 style="height: 40%; margin-top:30px">Arbori cu rădăcină<br><br>
+                Pentru un arbore se poate stabili un nod special, numit rădăcină. Putem spune că “agățăm” arborele în rădăcină, iar restul nodurilor cad.<br><br>
+                
+                Mai jos avem trei arbori cu rădăcină. Toți pornesc de la arborele de mai sus, dar diferă prin alegerea rădăcinii.</h3>
+                <img src="21.png" alt="Italian Trulli" style="height: 200px; width: auto;">
+                <h3 style="height: 40%; margin-top:30px">Terminologie<br><br>
+                Fie un arbore cu rădăcina r și x un nod în acest arbore. Atunci:<br><br>
+                
+                se numește ascendent al lui x orice nod y, diferit de x, aflat pe lanțul de la rădăcină la x;<br>
+                rădăcina nu are ascendenți;<br>
+                rădăcina este ascendent pentru toate nodurile din arbore;<br>
+                dacă y este ascendent al lui x și există muchia (y,x), atunci y se numește ascendent direct al lui x sau tatăl lui x;<br>
+                rădăcina este singurul nod din arbore care nu are tată;<br>
+                un nod y este descendent al nodului x, diferit de y, dacă x aparține lanțului de la r la y;<br>
+                dacă în plus există muchia (x,y), atunci y este descendent direct sau fiu al lui x;<br>
+                un nod care nu are niciun descendent se numește frunză;<br>
+                două noduri care au același tată se numesc frați;<br>
+                lungimea unui lanț de la rădăcina arborelui la un nod x reprezintă nivelul sau adâncimea nodului x;<br>
+                lungimea maximă a unui lanț de la rădăcină la un nod al arborelui reprezintă înălțimea arborelui;<br>
+                un nod al arborelui împreună cu toți descendenții săi formează un subarbore;</h3>
+                <h3  style="height: 40%; margin-top:30px">Exemplu:<br><br>
+                Fie arborele următor:<br><br><br>
+                
+                
+                
+                rădăcina arborelui este nodul 3;<br>
+                ascendenții nodului 4 sunt 5, 2 și 3. Ascendentul direct (tatăl) al nodului 4 este nodul 5;<br>
+                descendenții nodului 2 sunt 1 7 10 5 4 6. Descendenții direcți ai nodului 2 sunt 1 5;<br>
+                nodurile 1 și 5 sunt frați;<br
+                nodurile 6 7 8 10 12 sunt frunze;<br>
+                descompunerea pe niveluri:<br>
+                Nivelul 0 conține doar rădăcina: 3;<br>
+                Nivelul 1 conține nodurile 2 9;<br>
+                Nivelul 2 conține nodurile 1 5 8 11;<br>
+                Nivelul 3 conține nodurile 7 10 4 12;<br>
+                Nivelul 4 conține nodul 6;<br>
+                Înălțimea arborelui este 4;<br>
+                Nodurile 9 8 11 12 formează un subarbore;</h3>
+                <h3 style="height: 40%; margin-top:30px">Reprezentarea arborilor<br><br>
+                Reprezentarea prin referințe descendente<br>
+                Pentru fiecare nod al arborelui se memorează informații despre descendenții săi direcți<br>
+                Este similară cu reprezentarea prin liste de adiacențe a grafurilor. Pentru arborele de mai sus avem:<br><br>
+                
+                F[1]={7,10}<br>
+                F[2]={1,5}<br>
+                F[3]={2,9}<br>
+                F[4]={6}<br>
+                F[5]={4}<br>
+                F[6]={}<br>
+                F[7]={}<br>
+                F[8]={}<br>
+                F[9]={8,11}<br>
+                F[10]={}<br>
+                F[11]={12}<br>
+                F[12]={}</h3>
+   </div>             
+  
+ 
+<style>
+    body {
+        background-image: url("222.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sus{
+      text-decoration:none;color:white;
+    }
+    .sus:hover{
+        color:red;
+    }
+  </style> 
+</body>
+</html>
